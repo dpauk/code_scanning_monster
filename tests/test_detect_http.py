@@ -1,6 +1,6 @@
 import pytest
 
-from introspection_monster.detect_http import DetectHttp
+from code_scanning_monster.detect_http import DetectHttp
 
 
 @pytest.fixture
