@@ -1,10 +1,16 @@
 import re
 
+from code_scanning_monster.code_scanning_monster import CodeScanningMonster
+
 
 REGEX_TEMPLATE = 'http:\/\/.*{replacement}[^\s]+'
 
 
-class DetectHttp(object):
+class DetectHttp(CodeScanningMonster):
+    def __init__(self, url):
+        super.__init__()
+        super.get_code_to_scan(owner, repo)
+
     def detect_http(self, detection_string, string_to_test):
         current_template = REGEX_TEMPLATE.replace('{replacement}', detection_string)
 
